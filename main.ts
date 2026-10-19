@@ -1,4 +1,4 @@
-radio.onReceivedString(function (receivedString) {
+radio.onReceivedNumber(function (receivedNumber) {
     sinal = radio.receivedPacket(RadioPacketProperty.SignalStrength)
     led.plotBarGraph(
     Math.map(sinal, -95, -62, 0, 9),
